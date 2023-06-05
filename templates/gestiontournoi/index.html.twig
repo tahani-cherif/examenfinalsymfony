@@ -1,0 +1,12 @@
+<table border=3>
+<tr>
+   <td>id</td>
+   <td>nom</td>
+</tr>
+{% for c in partie %}
+<tr>
+   <td>{{c.id}}</td>
+   <td>{{c.nom}}</td>
+     <td><a href={{ path('app_detail', {'id': c.id}) }}><button>Détail</button></a></td>
+</tr>
+{% endfor%}

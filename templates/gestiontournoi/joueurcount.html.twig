@@ -1,0 +1,11 @@
+<table border=3>
+<tr>
+   <td>Nom</td>
+   <td>Nombre Joueur</td>
+</tr>
+{% for c in joueur %}
+<tr>
+<td>{{c[0].getIdpartie}}</td>
+<td>{{c.nombrejoueur}}</td>
+</tr>
+{% endfor%}

@@ -1,0 +1,16 @@
+<table border=3>
+<tr>
+   <td>Matricule</td>
+   <td>nom</td>
+   <td>Score</td>
+   <td>Partie</td>
+</tr>
+{% for c in joueur %}
+<tr>
+   <td>{{c.matriculejoueur}}</td>
+   <td>{{c.nom}}</td>
+   <td>{{c.score}}</td>
+   <td>{{c.idpartie}}</td>
+   <td><a href={{ path('app_update', {'id': c.matriculejoueur}) }}><button>Modefier</button></a></td>
+</tr>
+{% endfor%}
